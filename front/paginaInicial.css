@@ -1,0 +1,113 @@
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    background: #F5F5F5;
+}
+
+.header_inicial{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 20px;
+
+}
+
+#titulo{
+    max-width: 500px;
+}
+
+.navs{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 800px;
+}
+
+.container_cima{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+}
+
+#patio{
+    border-right: 0;
+}
+
+.corpo_inicial_esquerda{
+    padding-left: 150px;
+    max-width: 524px;
+    border-left: 200px;
+    
+    
+}
+
+#frase_inicial{
+    font-weight: bolder;
+    font-size: 64px;
+}
+
+#bordao{
+    font-size: 24px;
+}
+
+#oportunidades{
+    color: #FF8800;
+}
+
+.button1{
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+.button1:active{
+    transform: scale(0.95);
+}
+
+#recados{
+    color: white;
+    background: #5773FF;
+    border: none;
+}
+
+#conhecer{
+    background: white;
+    border: 1.5px solid #5773FF;   
+}
+
+#acessoRapido{
+    border-top: 50px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+h2{
+    padding-top: 100px;
+    padding-left: 150px;
+}
+
+#acesso{
+    font-weight: bolder;
+    font-size: 42px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#titulo{
+    max-width: 300px;
+    padding-left: 100px;
+    color: #5773FF;
+}
+
