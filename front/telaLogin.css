@@ -43,6 +43,14 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
+    justify-content: center;
+}
+
+#ou_google{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-group label {
@@ -79,6 +87,22 @@ body {
     transition: background 0.2s;
 }
 
+.btn-entrar-google{
+    width: 100%;
+    padding: 12px;
+    color: white;
+    border: solid 1.5px rgb(128, 127, 127);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
 .btn-entrar:hover {
     background: #435cd6;
+}
+.btn-entrar-google:hover {
+    background: #d4d4d4;
 }
