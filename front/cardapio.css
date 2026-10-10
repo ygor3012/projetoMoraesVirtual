@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}
+
+.documento-escolar {
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    margin: 130px auto 40px;
+    text-align: center;
+}
+
+.documento-escolar h1 {
+    color: #041434;
+    font-size: clamp(28px, 4vw, 40px);
+    margin-bottom: 12px;
+}
+
+.documento-escolar p {
+    color: #475569;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.imagem-documento {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(4, 20, 52, 0.08);
+    cursor: zoom-in;
+}
+
+#cardapioFoto{
+    width: 70%;
+}
+
+@media (max-width: 600px) {
+    .documento-escolar {
+        width: calc(100% - 32px);
+        margin-top: 125px;
+    }
+}
