@@ -25,7 +25,6 @@ loginForm.addEventListener('submit', (e) => {
 
     signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
         const user = userCredential.user;
-        alert("Sucesso! Login administrativo realizado.");
 
         window.location.href="admin.html";
     })
