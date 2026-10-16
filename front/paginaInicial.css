@@ -81,6 +81,9 @@ a:active{
     max-width: 500px;
 }
 
+#carrossel{
+    max-width: 100px;
+}
 
 .navs{
     grid-column: 2;
