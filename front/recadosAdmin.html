@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Administração de Recados | Colégio Antônio de Moraes Barros</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="brand-mark">AM<br>B</div><div class="brand-name">Colégio Antônio de<br>Moraes Barros</div></div>
+  <div class="top-right"><span>🛡 Área do Admin</span><span class="admin-pill">Administrador ▾</span></div>
+</header>
+<div class="layout">
+<main>
+    <div class="page-heading">
+      <div class="heading-icon">📢</div>
+      <div><h1>Recados</h1><p>Gerencie os recados do colégio. Adicione, edite e exclua informações importantes para toda a comunidade escolar.</p></div>
+    </div>
+
+    <section class="panel" id="form-panel">
+      <div class="panel-head"><h2 class="panel-title"><span class="symbol" id="form-symbol">⊕</span><span id="form-heading">Novo Recado</span></h2></div>
+      <form id="notice-form">
+        <input type="hidden" id="notice-id">
+        <div class="form-grid">
+          <div class="field"><label for="title">Título do recado *</label><input id="title" name="title" maxlength="100" placeholder="Ex.: Reunião de pais e responsáveis" required></div>
+          <div class="field"><label for="date">Data de publicação *</label><input id="date" name="date" type="date" required></div>
+          <div class="field"><label for="status">Status de publicação</label><select id="status" name="status"><option value="active">Publicado — visível no portal</option><option value="inactive">Rascunho — não visível no portal</option></select></div>
+          <div class="field"><label for="message">Mensagem *</label><textarea id="message" name="message" maxlength="1000" placeholder="Digite o conteúdo completo do recado..." required></textarea><small><span id="char-count">0</span>/1000 caracteres</small></div>
+        </div>
+        <div class="form-actions"><button class="btn btn-secondary" type="button" id="cancel-edit" hidden>Cancelar edição</button><button class="btn btn-secondary" type="reset" id="clear-btn">Limpar campos</button><button class="btn btn-primary" type="submit" id="submit-btn">➤ Publicar recado</button></div>
+      </form>
+      <p class="hint">Demonstração de front-end: os recados ficam salvos neste navegador usando localStorage. A integração com Firebase/Firestore ainda precisa ser implementada.</p>
+    </section>
+
+    <section class="panel">
+      <div class="list-toolbar">
+        <div><h2 class="panel-title"><span class="symbol">☷</span>Recados cadastrados</h2><div class="count" id="notice-count">0 recados</div></div>
+        <div class="search-box"><span class="search-icon">⌕</span><input id="search" type="search" placeholder="Buscar por título ou mensagem..." aria-label="Buscar recados"></div>
+      </div>
+      <div id="notice-list" class="notice-list"></div>
+    </section>
+  </main>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
